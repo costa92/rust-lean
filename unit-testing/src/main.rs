@@ -93,3 +93,4 @@ mod tests3 {
     }
 }
 // 可以把属性 #[ignore] 赋予测试以排除某些测试，或者使用 cargo test -- --ignored 命令来运行它们。
+// 参考文档：https://rustwiki.org/zh-CN/rust-by-example/testing/doc_testing.html

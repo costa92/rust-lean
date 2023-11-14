@@ -1,0 +1,1 @@
+/home/hellotalk/code/rust/rust-lean/demo-hello-mutil/target/debug/demo-hello-mutil: /home/hellotalk/code/rust/rust-lean/demo-hello-mutil/src/lib.rs /home/hellotalk/code/rust/rust-lean/demo-hello-mutil/src/main.rs

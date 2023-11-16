@@ -6,24 +6,40 @@ mod utils;
 mod args;
 
 use std::collections::HashMap;
+use clap::Parser;
+use futures::future::ok;
 
+
+pub async fn get_ip(url:String)  -> BoxResult<(HashMap<String, String>)> {
+    let resp = reqwest::get(url)
+        .await?
+        .json::<HashMap<String, String>>();
+    let res = resp.await?;
+    Ok(res)
+}
+
+
+pub async fn baidu() -> BoxResult<()> {
+    let resp = reqwest::get("http://api.fanyi.baidu.com/api/trans/vip/translate")
+        .await?
+        .text()
+        .await?;
+    println!("{}", resp);
+    Ok(())
+}
 
 
 #[tokio::main]
-async fn main() ->  Result<()> {
-    // let setting = config::config::Setting::new();
+async fn main() -> Result<()> {
+    let args =  args::Args::parse();
 
-    let client = utils::clint::Client::new()?;
 
-    let req = client
-        .request(reqwest::Method::GET, "https://httpbin.org/ip")
-        .build()?;
-
-    let resp = client.execute(req).await?;
-
-    let body = resp.text().await?;
-
-    println!("body: {:?}", body);
-
+    let res =  get_ip("https://httpbin.org/ip".to_string()).await;
+    if res.is_ok() {
+        println!("ok");
+        println!("{:?}", res.as_ref().unwrap().get("origin").unwrap());
+    } else {
+        println!("err");
+    }
     Ok(())
 }

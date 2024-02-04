@@ -1,0 +1,6 @@
+{
+    "DevChat.PythonForCommands": "/home/hellotalk/.chat/mamba/envs/devchat-commands/bin/python",
+    "rust-analyzer.linkedProjects": [
+        "./trait-demo-three/Cargo.toml"
+    ]
+}

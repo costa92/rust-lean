@@ -1,0 +1,10 @@
+/home/hellotalk/code/rust/rust-lean/translation/target/debug/deps/futures_channel-28e9eb11d495eeb9.rmeta: /home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/lib.rs /home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/lock.rs /home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/mod.rs /home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/queue.rs /home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/sink_impl.rs /home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/oneshot.rs
+
+/home/hellotalk/code/rust/rust-lean/translation/target/debug/deps/futures_channel-28e9eb11d495eeb9.d: /home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/lib.rs /home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/lock.rs /home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/mod.rs /home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/queue.rs /home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/sink_impl.rs /home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/oneshot.rs
+
+/home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/lib.rs:
+/home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/lock.rs:
+/home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/mod.rs:
+/home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/queue.rs:
+/home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/mpsc/sink_impl.rs:
+/home/hellotalk/.cargo/registry/src/index.crates.io-6f17d22bba15001f/futures-channel-0.3.29/src/oneshot.rs:

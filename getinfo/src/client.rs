@@ -46,9 +46,11 @@ async fn main()-> Result<(), Box<dyn std::error::Error>>{
         framed_stream.send(Bytes::from(directive)).await?;
 
         if let Some(msg) = framed_stream.next().await {
-            if (&msg).is_err() {
-                return Err("error from server".into());
-            }
+            // if (&msg).is_err() {
+            //     return Err("error from server".into());
+            // }
+
+            // let timeinfo = String::from_utf8(msg?.to_vec())?;
 
             let timeinfo = String::from_utf8(msg?.to_vec())?;
             println!("timeinfo: {}", timeinfo);

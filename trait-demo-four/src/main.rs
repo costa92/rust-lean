@@ -3,7 +3,7 @@ trait Add<T> {
     type Output;
     fn add(self,rhs:T) -> Self::Output;
 }
-
+#[derive(Debug)]
 struct Point{
     x: i32,
     y: i32,
@@ -117,4 +117,40 @@ fn main() {
     let color = Color::red(1);
     // color = color.red(3);
     println!("color.r = {}, color.g = {}, color.b = {}", color.r, color.g, color.b);
+
+    let s = foo();
+    println!("{}", s);
+
+    let p = foo_point();
+    println!("{:?}", p);
+
+    let pi = foo_int();
+    println!("{}", pi);
+
+    let boxed:Box<u8> = Box::new(5);
+    let val: u8 = *boxed;
+
+    println!("{:?}", val);
+    println!("{:?}", boxed); // 用于
+}
+
+fn foo() -> Box<String>{
+    let s = "abc".to_string();
+    Box::new(s)
+}
+
+fn foo_point() -> Box<Point>{
+    let p = Point { x: 1, y: 2 };  // 这个结构体的实例创建在栈上
+    let boxed =  Box::new(p);
+    // let q = p; // 这一句来检查 p 是否被移动了
+    boxed
+}
+
+
+fn foo_int() -> Box<i32>{
+    let i = 5;
+    let boxed = Box::new(i); 
+    let q =i; // 这一句用来检查i有没有被move走
+    // let boxed2 = boxed;  // 这一句用来检查boxed有没有被move走
+    boxed
 }
